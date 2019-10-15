@@ -3,7 +3,7 @@
 void main()
 {
 clrscr():
-int a;
+int a,i,fact=1;
 printf("enter a no");
 scanf("%d",&a);
 if(a>0)
@@ -12,5 +12,11 @@ else if(a<0)
 prinf("a is negative");
 else
 printf("a is zero");
+for(i=0;i<=a;i++)
+{
+ fact=fact*i;
+ i++;
+ }
+ printf("factorial of n0:",fact);
 getch();
 }
